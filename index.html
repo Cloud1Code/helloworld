@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Python Program</title>
-</head>
-<body>
-  <h1>Welcome to my Python Program Page</h1>
-  <img src="python_logo.jpg" alt="Python Logo">
-  <p>This page showcases a simple Python program that can perform basic calculations.</p>
+import random
 
-  <h2>About the Python Program</h2>
-  <img src="python_code.jpg" alt="Python Code">
-  <p>The Python program I created can add, subtract, multiply, and divide two numbers. It uses simple input and output functions to interact with the user.</p>
+# Generate a random number
+secret_number = random.randint(1, 100)
 
-  <h3>How to Use the Program</h3>
-  <img src="python_terminal.jpg" alt="Python Terminal">
-  <p>To use the program, simply run the Python script and follow the on-screen instructions. You'll be prompted to enter two numbers, and then the program will perform the desired operation and display the result.</p>
+# Prompt the user for a guess
+user_guess = int(input("Guess a number between 1 and 100: "))
 
-  <h4>Contact Me</h4>
-  <img src="contact_info.jpg" alt="Contact Information">
-  <p>If you have any questions or feedback about the Python program, feel free to reach out to me using the contact information provided.</p>
-</body>
-</html>
+# Check if the guess matches the secret number
+if user_guess == secret_number:
+    print("Congratulations! You guessed the right number.")
+else:
+    print("Sorry, your guess doesn't match the secret number.")
