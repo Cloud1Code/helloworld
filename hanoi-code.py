@@ -18,3 +18,6 @@ source = 'A'
 dest = 'C'
 aux = 'B'
 hanoi(n, source, dest, aux)
+#n=destination
+#n-1=move (n-1)from source to auxilaryy keeping dest as holding position.
+#n-1=move (n-1)from aux to destination by keeping source as holding position.
