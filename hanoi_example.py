@@ -1,12 +1,11 @@
 def hanoi(n, from_rod,to_rod,aux_rod):
-  global steps
-  if n == 0:
-      return
-  else:
-
+    global steps
+    if (n == 0):
+        return
+    else:
     hanoi(n-1,from_rod, aux_rod, to_rod)
-    from_rod.remove("size-"+str(i))
-    to_rod.insert(0,"size-"+str(i))
+    from_rod.remove("size-"+ str(i))
+    to_rod.insert(0,"size-"+ str(i))
     print("A: ",A,"B: ",B,"C: ",C)
     steps = steps + 1
     hanoi(n-1,aux_rod,to_rod,from_rod)
